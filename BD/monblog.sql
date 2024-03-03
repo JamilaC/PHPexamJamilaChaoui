@@ -39,10 +39,7 @@ CREATE TABLE `t_auteur` (
 -- Dumping data for table `t_auteur`
 --
 
-INSERT INTO `t_auteur` (`id`, `nom`, `prenom`, `email`, `passw`) VALUES
-(7, 'Zbair', 'Youness', 'anayouness52@gmail.com', '81dc9bdb52d04dc20036dbd8313ed055'),
-(8, 'zbair', 'jonas', 'admin01@gmail.com', '81dc9bdb52d04dc20036dbd8313ed055'),
-(11, 'Zbair', 'Youness', 'youzbair@outlook.com', '81dc9bdb52d04dc20036dbd8313ed055');
+
 
 -- --------------------------------------------------------
 
@@ -62,11 +59,6 @@ CREATE TABLE `t_billet` (
 -- Dumping data for table `t_billet`
 --
 
-INSERT INTO `t_billet` (`BIL_ID`, `BIL_DATE`, `BIL_TITRE`, `BIL_CONTENU`, `auteurId`) VALUES
-(1, '2024-02-18 17:53:40', 'Premier billet', 'Bonjour monde ! Ceci est le premier billet sur mon blog.', 7),
-(2, '2024-02-18 17:53:40', 'Au travail', 'Il faut enrichir ce blog dès maintenant.', 7),
-(10, '2024-03-02 14:16:58', 'srjhsr', 'fvsdfgsdfgv', 11),
-(11, '2024-03-02 14:23:21', 'aeahetht', 'ethjaetj', 11);
 
 -- --------------------------------------------------------
 
@@ -85,15 +77,6 @@ CREATE TABLE `t_commentaire` (
 --
 -- Dumping data for table `t_commentaire`
 --
-
-INSERT INTO `t_commentaire` (`COM_ID`, `COM_DATE`, `COM_AUTEUR`, `COM_CONTENU`, `BIL_ID`) VALUES
-(1, '2024-02-18 17:53:40', 'A. Nonyme', 'Bravo pour ce début', 1),
-(2, '2024-02-18 17:53:40', 'Moi', 'Merci ! Je vais continuer sur ma lancée', 1),
-(8, '2024-03-02 12:44:46', 'dfd', 'dfgdgedg', 2),
-(9, '2024-03-02 12:54:16', '15', 'ghedh', 2),
-(10, '2024-03-02 13:55:32', 'fgsfgs', 'dfasdfsdf', 2),
-(11, '2024-03-02 13:58:38', 'youzbair@outlook.com', 'dcfscf', 1),
-(12, '2024-03-02 14:23:11', 'youzbair@outlook.com', 'nrgzhrg', 10);
 
 --
 -- Indexes for dumped tables
